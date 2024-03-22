@@ -33,7 +33,7 @@ jobs:
 
       - name: Build project
         run: |
-          cp -r src/ build/
+          npm run build
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
@@ -41,8 +41,8 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Upload `src/` folder
-          path: "build/"
+          # Upload `dist/` folder
+          path: "dist/"
 
       - name: Deploy to GitHub Pages
         id: deployment
