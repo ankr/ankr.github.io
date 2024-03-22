@@ -7,7 +7,7 @@
         "build:clear": "rm -rf dist/",
         "build:typescript": "tsc",
         "build:html": "find src/ -name \"*.html\" -type f -exec cp {} dist/ \\;",
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "test": "vitest"
     },
     "keywords": [],
     "author": "",
