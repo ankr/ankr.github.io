@@ -1,5 +1,5 @@
 const greetings = (): string => {
-    return "Welcome!";
+    return "Welcome from js!";
 };
 
 document.addEventListener("DOMContentLoaded", () => {
