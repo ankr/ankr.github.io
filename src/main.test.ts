@@ -1,5 +1,7 @@
+import { greetings } from "./main";
+
 describe("main", () => {
     it("works", () => {
-        expect(1 + 1).toBe(2);
+        expect(greetings()).toBe("Hello from js!");
     });
 });

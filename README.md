@@ -12,7 +12,7 @@ npm test
 
 ## Building
 
-Build typescript and copy any HTML files from `src/` into `dist/`.
+Builds typescript and copy any HTML files from `src/` into `dist/`.
 
 ```
 npm run build

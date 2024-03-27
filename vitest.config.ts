@@ -13,7 +13,7 @@ export default defineConfig({
                 statements: 100,
             },
         },
-        environment: "node",
+        environment: "jsdom",
         globals: true,
         reporters: ["default"],
         watch: false,

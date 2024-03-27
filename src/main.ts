@@ -1,4 +1,4 @@
-const greetings = (): string => {
+export const greetings = (): string => {
     return "Hello from js!";
 };
 
