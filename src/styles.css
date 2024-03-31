@@ -46,6 +46,7 @@ a {
 /* Cards */
 .card {
     display: grid;
+    order: 1;
     grid-template-columns: 50% 50%;
     margin-bottom: 35px;
     background-color: whitesmoke;
@@ -53,8 +54,13 @@ a {
     box-shadow: 3px 3px 10px rgb(40, 40, 40);
 }
 
+.card:nth-child(2n) {
+    order: -1;
+}
+
 .card a {
     color: rgb(64, 64, 64);
+    padding: 0 5px;
 }
 
 .card > div:first-child {
@@ -73,7 +79,6 @@ a {
 
 .card__actions {
     font-size: 15pt;
-    letter-spacing: 10px;
 }
 
 .card__description {
