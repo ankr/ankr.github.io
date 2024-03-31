@@ -3,34 +3,201 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="./main.js" type="module"></script>
     <title>ankr.dk</title>
+
+    <!-- Favicon -->
+    <link
+      id="favicon"
+      rel="shortcut icon"
+      type="image/png"
+      href="data:image/png;base64,....=="
+    />
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700"
+    />
+
+    <!-- Icons -->
+    <link
+      rel="preload"
+      href="https://rawgit.com/Viglino/iconicss/master/dist/iconicss.min.css"
+      as="style"
+    />
+    <link
+      rel="stylesheet"
+      href="https://rawgit.com/Viglino/iconicss/master/dist/iconicss.min.css"
+    />
+
+    <!-- Custom css -->
+    <link rel="preload" href="styles.css" as="style" />
     <link rel="stylesheet" href="styles.css" />
+
+    <!-- Javascript -->
+    <script src="./main.js" type="module"></script>
   </head>
   <body>
-    <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
-      <circle
-        cx="50%"
-        cy="50%"
-        r="45%"
-        stroke-width="4"
-        stroke="grey"
-        fill="none"
-      />
-      <rect y="25%" width="100%" height="50%" fill="white" />
-      <text
-        x="50%"
-        y="50%"
-        text-anchor="middle"
-        dominant-baseline="middle"
-        class="text"
-        fill="grey"
-      >
-        ankr
-      </text>
-    </svg>
+    <div class="content">
 
-    <hr />
-    <div id="content">Hello world</div>
+      <div class="header">
+        <div class="logo">
+          <svg
+            width="200"
+            height="200"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle
+              cx="50%"
+              cy="50%"
+              r="45%"
+              stroke-width="4"
+              stroke="whitesmoke"
+              fill="none"
+            />
+            <rect y="25%" width="100%" height="50%" fill="rgb(64, 64, 64)" />
+            <text
+              x="50%"
+              y="50%"
+              text-anchor="middle"
+              dominant-baseline="middle"
+              class="logo__text"
+              fill="whitesmoke"
+            >
+              ankr
+            </text>
+          </svg>
+        </div>
+        <div class="header__description">
+          <strong>Hi!</strong> I'm Andreas, a software developer!
+        </div>
+
+      <!-- end header -->
+      </div>
+
+      <div class="cards">
+        <!-- about.me -->
+        <div class="card">
+          <div class="card__title">
+            <h2>about.me<h2>
+            <div class="card__actions">
+
+              <a href="https://github.com/ankr" target="_blank" title="View my github">
+                <span class="icss-stack icss-tada-hover">
+                  <i class="icss-github-o"></i>
+                </span>
+              </a>
+
+              <a href="https://www.linkedin.com/in/andreas-kristiansen/" target="_blank" title="View my linkedin">
+                <span class="icss-stack icss-tada-hover">
+                  <i class="icss-linkedin"></i>
+                </span>
+              </a>
+
+              <a href="https://www.npmjs.com/~ankr" target="_blank" title="View my npm packages">
+                <span class="icss-stack icss-tada-hover">
+                  <i class="icss-js"></i>
+                </span>
+              </a>
+
+            </div>
+          </div>
+          <div class="card__description">
+            Been coding since I was 13 and now has more than 18 years professional experience.
+            I mainly focuses my work in the backend, but I dabble around frontend from time to time.
+          </div>
+        </div>
+
+        <!-- vector.js -->
+        <div class="card">
+          <div class="card__description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+            consequat fermentum lacus, nec aliquam arcu tempus vitae. Donec id
+            ex turpis. Cras eget orci viverra, blandit ipsum malesuada, tempor
+            mauris. Donec ac feugiat orci.
+          </div>
+          <div class="card__title">
+            <h2>vector.js<h2>
+            <div class="card__actions">
+              <a href="https://github.com/ankr/vector.js" target="_blank" title="View project on github">
+                <span class="icss-stack icss-tada-hover">
+                  <i class="icss-github-o"></i>
+                </span>
+              </a>
+              <a href="/vector.js" title="View demo">
+                <span class="icss-stack icss-tada-hover">
+                  <i class="icss-clapper"></i>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- annie.js -->
+        <div class="card">
+          <div class="card__title">
+            <h2>annie.js<h2>
+            <div class="card__actions">
+              <a href="https://github.com/ankr/annie.js" target="_blank" title="View project on github">
+                <span class="icss-stack icss-tada-hover">
+                  <i class="icss-github-o"></i>
+                </span>
+              </a>
+              <a href="/annie.js" title="View demo">
+                <span class="icss-stack icss-tada-hover">
+                  <i class="icss-clapper"></i>
+                </span>
+              </a>
+            </div>
+          </div>
+          <div class="card__description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+            consequat fermentum lacus, nec aliquam arcu tempus vitae. Donec id
+            ex turpis. Cras eget orci viverra, blandit ipsum malesuada, tempor
+            mauris. Donec ac feugiat orci.
+          </div>
+        </div>
+
+        <!-- timer.js -->
+        <div class="card">
+          <div class="card__description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+            consequat fermentum lacus, nec aliquam arcu tempus vitae. Donec id
+            ex turpis. Cras eget orci viverra, blandit ipsum malesuada, tempor
+            mauris. Donec ac feugiat orci.
+          </div>
+          <div class="card__title">
+            <h2>timer.js<h2>
+            <div class="card__actions">
+              <a href="https://github.com/ankr/timer.js" target="_blank" title="View project on github">
+                <span class="icss-stack icss-tada-hover">
+                  <i class="icss-github-o"></i>
+                </span>
+              </a>
+              <a href="/timer.js" title="View demo">
+                <span class="icss-stack icss-tada-hover">
+                  <i class="icss-clapper"></i>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      <!-- end cards-->
+      </div>
+
+      <div class="footer">
+        by ankr &copy; 2024
+      </div>
+
+    <!-- end content -->
+    </div>
   </body>
 </html>

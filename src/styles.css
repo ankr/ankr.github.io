@@ -1,12 +1,86 @@
-@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
-
 html {
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Quicksand", sans-serif;
 }
 
-.text {
+body {
+    background-color: rgb(64, 64, 64);
+    color: whitesmoke;
+}
+
+a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+/* Content */
+.content {
+    width: 800px;
+    margin: 0 auto;
+}
+
+/* Header */
+.header {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-bottom: 35px;
+}
+
+.header__description {
+    text-align: center;
+    line-height: 200px;
+}
+
+/* Logo */
+.logo {
+    text-align: center;
+}
+
+.logo__text {
     font-family: "Quicksand", sans-serif;
     font-size: 65pt;
     letter-spacing: 5px;
     font-style: italic;
+    font-display: block;
+}
+
+/* Cards */
+.card {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-bottom: 35px;
+    background-color: whitesmoke;
+    color: rgb(64, 64, 64);
+    box-shadow: 3px 3px 10px rgb(40, 40, 40);
+}
+
+.card a {
+    color: rgb(64, 64, 64);
+}
+
+.card > div:first-child {
+    border-right: 1px solid rgb(64, 64, 64);
+}
+
+.card__title {
+    padding: 5px;
+    text-align: center;
+    height: 150px;
+}
+
+.card__title h2 {
+    font-size: 25pt;
+}
+
+.card__actions {
+    font-size: 15pt;
+    letter-spacing: 10px;
+}
+
+.card__description {
+    padding: 15px;
+}
+
+/* Footer */
+.footer {
+    text-align: right;
 }
