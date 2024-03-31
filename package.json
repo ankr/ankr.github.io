@@ -9,6 +9,7 @@
         "build:html": "find src/ -type f \\( -name \"*.html\" -o -name \"*.css\" \\) -exec cp {} dist/ \\;",
         "test": "vitest"
     },
+    "type": "module",
     "keywords": [],
     "author": "",
     "license": "ISC",

@@ -19,7 +19,7 @@
         "sourceMap": true,
         "strict": true,
         "strictNullChecks": true,
-        "target": "ES2022",
+        "target": "ESNext",
         "types": ["node", "vitest/globals"]
     },
     "include": ["src/**/*", "scripts/**/*"],
