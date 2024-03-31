@@ -99,7 +99,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const wrapper = document.getElementsByClassName("cards")[0];
 
     for (const project of projects) {
-        console.log("foo");
         wrapper.appendChild(createCard(project));
     }
 });
