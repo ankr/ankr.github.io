@@ -46,16 +46,16 @@ a {
 /* Cards */
 .card {
     display: grid;
-    order: 1;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-flow: dense;
     margin-bottom: 35px;
     background-color: whitesmoke;
     color: rgb(64, 64, 64);
     box-shadow: 3px 3px 10px rgb(40, 40, 40);
 }
 
-.card:nth-child(2n) {
-    order: -1;
+.card:nth-child(2n + 2) > .card__title {
+    grid-column: 2;
 }
 
 .card a {
@@ -63,8 +63,12 @@ a {
     padding: 0 5px;
 }
 
-.card > div:first-child {
+.card:nth-child(odd) .card__title {
     border-right: 1px solid rgb(64, 64, 64);
+}
+
+.card:nth-child(even) .card__title {
+    border-left: 1px solid rgb(64, 64, 64);
 }
 
 .card__title {

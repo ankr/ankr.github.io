@@ -58,10 +58,6 @@ const createCard = (project: Project) => {
         parent: fragment,
         children: [
             createElement("div", {
-                attributes: { class: "card__description" },
-                textContent: project.description,
-            }),
-            createElement("div", {
                 attributes: { class: "card__title" },
                 children: [
                     createElement("h2", {
@@ -88,6 +84,10 @@ const createCard = (project: Project) => {
                         ],
                     }),
                 ],
+            }),
+            createElement("div", {
+                attributes: { class: "card__description" },
+                textContent: project.description,
             }),
         ],
     });
