@@ -1,3 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+
 html {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.text {
+    font-family: "Quicksand", sans-serif;
+    font-size: 65pt;
+    letter-spacing: 5px;
+    font-style: italic;
 }
