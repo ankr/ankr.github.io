@@ -18,21 +18,21 @@ const projects: Project[] = [
     {
         title: "vector.js",
         description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla consequat fermentum lacus, nec aliquam arcu tempus vitae. Donec id ex turpis. Cras eget orci viverra, blandit ipsum malesuada, tempor mauris. Donec ac feugiat orci.",
+            'A 2d vector class exposing a "immutable" vector object using Object.freeze() - I use this in almost all my game/animation projects.',
         githubUrl: "https://github.com/ankr/vector.js",
         demoUrl: "/vector.js",
     },
     {
         title: "annie.js",
         description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla consequat fermentum lacus, nec aliquam arcu tempus vitae. Donec id ex turpis. Cras eget orci viverra, blandit ipsum malesuada, tempor mauris. Donec ac feugiat orci.",
+            "Simple tween animation framework, still in its early days.",
         githubUrl: "https://github.com/ankr/annie.js",
         demoUrl: "/annie.js",
     },
     {
         title: "timer.js",
         description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla consequat fermentum lacus, nec aliquam arcu tempus vitae. Donec id ex turpis. Cras eget orci viverra, blandit ipsum malesuada, tempor mauris. Donec ac feugiat orci.",
+            "A game timer to be used in a game loop, is has pause/resume functionalities.",
         githubUrl: "https://github.com/ankr/timer.js",
         demoUrl: "/timer.js",
     },

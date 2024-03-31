@@ -52,6 +52,7 @@ a {
     background-color: whitesmoke;
     color: rgb(64, 64, 64);
     box-shadow: 3px 3px 10px rgb(40, 40, 40);
+    border-radius: 5px;
 }
 
 .card:nth-child(2n + 2) > .card__title {
