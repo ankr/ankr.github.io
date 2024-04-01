@@ -4,7 +4,7 @@ interface Project {
     title: string;
     description: string;
     githubUrl: string;
-    demoUrl: string;
+    previewUrl: string;
 }
 
 const projects: Project[] = [
@@ -13,28 +13,28 @@ const projects: Project[] = [
         description:
             "Just a simple test showing that github pages for other repositories shows up on the same domain.",
         githubUrl: "https://github.com/ankr/gp-test",
-        demoUrl: "/gp-test",
+        previewUrl: "/gp-test",
     },
     {
         title: "vector.js",
         description:
             'A 2d vector class exposing a "immutable" vector object using Object.freeze() - I use this in almost all my game/animation projects.',
         githubUrl: "https://github.com/ankr/vector.js",
-        demoUrl: "/vector.js",
+        previewUrl: "/vector.js",
     },
     {
         title: "annie.js",
         description:
             "Simple tween animation framework, still in its early days.",
         githubUrl: "https://github.com/ankr/annie.js",
-        demoUrl: "/annie.js",
+        previewUrl: "/annie.js",
     },
     {
         title: "timer.js",
         description:
             "A game timer to be used in a game loop, is has pause/resume functionalities.",
         githubUrl: "https://github.com/ankr/timer.js",
-        demoUrl: "/timer.js",
+        previewUrl: "/timer.js",
     },
 ];
 
@@ -76,7 +76,7 @@ const createCard = (project: Project) => {
                             }),
                             createElement("a", {
                                 attributes: {
-                                    href: project.demoUrl,
+                                    href: project.previewUrl,
                                     title: "View demo page",
                                 },
                                 children: [createIcon("clapper")],
